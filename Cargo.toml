@@ -1,6 +1,6 @@
 [package]
 name = "from-pg-fit-row"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 description = "Extract a struct from a `tokio-postgres` Row that fits correctly"
 authors = ["Nicolas Guiard <nicolas.nguiard@gmail.com>"]

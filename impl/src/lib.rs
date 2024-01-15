@@ -27,7 +27,7 @@ pub fn derive_from_fit_row(input: TokenStream) -> TokenStream {
 
     quote! {
         impl FromPgFitRow for #struct_name {
-            fn from_fit_pg_row(row: tokio_postgres::Row) -> Self {
+            fn from_pg_fit_row(row: tokio_postgres::Row) -> Self {
                 Self {
                     #(#fields_from_row),*
                 }
