@@ -1,6 +1,6 @@
 [package]
 name = "from-pg-fit-row-impl"
-version = "0.1.3"
+version = "0.1.4"
 edition = "2021"
 
 [lib]
