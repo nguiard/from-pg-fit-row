@@ -146,6 +146,23 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8fcfdc7a0362c9f4444381a9e697c79d435fe65b52a37466fc2c1184cee9edc6"
 
 [[package]]
+name = "from-pg-fit-row"
+version = "0.1.0"
+dependencies = [
+ "from-pg-fit-row-impl",
+ "tokio-postgres",
+]
+
+[[package]]
+name = "from-pg-fit-row-impl"
+version = "0.1.0"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
 name = "futures-channel"
 version = "0.3.30"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -334,23 +351,6 @@ name = "percent-encoding"
 version = "2.3.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e3148f5046208a5d56bcfc03053e3ca6334e51da8dfb19b6cdc8b306fae3283e"
-
-[[package]]
-name = "pg-from-fit-row"
-version = "0.1.0"
-dependencies = [
- "pg-from-fit-row-impl",
- "tokio-postgres",
-]
-
-[[package]]
-name = "pg-from-fit-row-impl"
-version = "0.1.0"
-dependencies = [
- "proc-macro2",
- "quote",
- "syn",
-]
 
 [[package]]
 name = "phf"
